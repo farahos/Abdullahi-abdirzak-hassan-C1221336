@@ -145,7 +145,6 @@ public class arrayStack<t> {
 
 
 //list2.push(300);
-
        list3.merge(list1, list2);
 
     }
