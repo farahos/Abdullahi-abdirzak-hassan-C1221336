@@ -105,13 +105,13 @@ public class arrayStack<t> {
         for (int i = 0; i < arr1.size(); i++) {
             if (!contains(arr1.stack[i])) {
                 this.push(arr1.stack[i]);
+
             }
         }
 
         for (int i = 0; i < arr2.size(); i++) {
             if (!contains(arr2.stack[i])) {
                 this.push(arr2.stack[i]);
-                System.out.println(stack[i]);
             }
         }
     }
@@ -141,11 +141,12 @@ public class arrayStack<t> {
     // list two
        list2.push(100);
         list2.push(700);
+        list2.push(10);
 
 
 //list2.push(300);
 
        list3.merge(list1, list2);
-      // list3.dispaly();
+
     }
 }
