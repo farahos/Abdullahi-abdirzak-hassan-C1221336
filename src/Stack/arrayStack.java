@@ -111,6 +111,7 @@ public class arrayStack<t> {
         for (int i = 0; i < arr2.size(); i++) {
             if (!contains(arr2.stack[i])) {
                 this.push(arr2.stack[i]);
+                System.out.println(stack[i]);
             }
         }
     }
@@ -137,10 +138,6 @@ public class arrayStack<t> {
         list1.push(700);
         list1.push(700);
 
-
-
-
-
     // list two
        list2.push(100);
         list2.push(700);
@@ -149,6 +146,6 @@ public class arrayStack<t> {
 //list2.push(300);
 
        list3.merge(list1, list2);
-       list3.dispaly();
+      // list3.dispaly();
     }
 }
