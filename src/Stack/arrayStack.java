@@ -95,23 +95,23 @@ public class arrayStack<t> {
         return false;
     }
 
-    public void merge(arrayStack<t> arr1, arrayStack<t> arr2) {
-        int newSize = arr1.size() + arr2.size();
+    public void merge(arrayStack<t> list1, arrayStack<t> list2) {
+        int newSize = list1.size() + list2.size();
 
         if (stack.length < newSize) {
             stack = Arrays.copyOf(stack, newSize);
         }
 
-        for (int i = 0; i < arr1.size(); i++) {
-            if (!contains(arr1.stack[i])) {
-                this.push(arr1.stack[i]);
+        for (int i = 0; i < list1.size(); i++) {
+            if (!contains(list1.stack[i])) {
+                this.push(list1.stack[i]);
 
             }
         }
 
-        for (int i = 0; i < arr2.size(); i++) {
-            if (!contains(arr2.stack[i])) {
-                this.push(arr2.stack[i]);
+        for (int i = 0; i < list2.size(); i++) {
+            if (!contains(list2.stack[i])) {
+                this.push(list2.stack[i]);
             }
         }
     }
@@ -147,5 +147,6 @@ public class arrayStack<t> {
 //list2.push(300);
        list3.merge(list1, list2);
        list3.dispaly();
+
     }
 }
